@@ -1,0 +1,17 @@
+t=int(input())
+while(t):
+    x=int(input())
+    price=list(map(int,input().split()))
+    y=1
+    count=1
+    while(y<x):
+        tp=price[y]
+        if(y<5):
+            if(min(price[:y])>tp):
+                count+=1
+        else:
+            if(min(price[y-5:y])>tp):
+                count+=1
+        y+=1
+    print(count)
+    t-=1

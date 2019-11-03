@@ -1,0 +1,16 @@
+x=int(input())
+while(x):
+    y=int(input())
+    l=list(map(int,input().split()))
+    l.sort()
+    z=0
+    key=0
+    while(z<y):
+        if(z<l[z]):
+            key=1
+            print(z)
+            break;
+        z+=1
+    if(key==0):
+        print(z)
+    x-=1

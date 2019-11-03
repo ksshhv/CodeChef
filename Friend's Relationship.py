@@ -1,0 +1,21 @@
+t=int(input())
+while(t):
+    x=int(input())
+    a=x
+    while(x):
+        x-=1
+        m=x
+        k=2*m
+        n=a-x
+        l=n
+        while(n):
+            print("*",end="")
+            n-=1
+        while(k):
+            print("#",end="")
+            k-=1
+        while(l):
+            print("*",end="")
+            l-=1
+        print("")
+    t-=1
